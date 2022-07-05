@@ -16,6 +16,7 @@ void loop() {
   //(2^24)-1
   // 24 bit ADC
   double voltage = 5.0*adc/16777215;
+  Serial.print(adc);
   Serial.print("Voltage:\t\t");
   Serial.println(voltage);
 }
